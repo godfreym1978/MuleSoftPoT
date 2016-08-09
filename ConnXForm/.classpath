@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="MULE_RUNTIME/org.mule.tooling.server.3.8.0.ee"/>
+	<classpathentry kind="src" path="src/main/app"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/resources"/>
+	<classpathentry kind="src" path="src/main/wsdl"/>
+	<classpathentry kind="src" path="src/main/api"/>
+	<classpathentry kind="src" path="src/test/munit"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.allclient.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.axis2.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.commonservices.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.defaultconfig.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.headers.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.jmqi.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.jms.Nojndi.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.pcf.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.postcard.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.soap.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.tools.ras.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mq.traceControl.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/com.ibm.mqjms.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/fscontext.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/jms.jar"/>
+	<classpathentry kind="lib" path="/opt/mqm/java/lib/providerutil.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
