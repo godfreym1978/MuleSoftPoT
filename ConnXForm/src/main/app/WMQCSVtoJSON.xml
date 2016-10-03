@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/ee/wmq http://www.mulesoft.org/schema/mule/e
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
-    <wmq:connector name="WMQ" hostName="localhost" port="1411" queueManager="WQM.INT" channel="CLIENT.TO.WQM.INT" username="godfrey" password="A1!ciaJu1y" transportType="CLIENT_MQ_TCPIP" validateConnections="true" doc:name="WMQ"/>
+    <wmq:connector name="WMQ" hostName="localhost" port="1411" queueManager="WQM.INT" channel="CLIENT.TO.WQM.INT" username="godfrey" password="" transportType="CLIENT_MQ_TCPIP" validateConnections="true" doc:name="WMQ"/>
     <flow name="WMQCSVtoCPYFlow">
         <wmq:inbound-endpoint queue="INPUTQ" connector-ref="WMQ" doc:name="WMQ"/>
         <dw:transform-message metadata:id="8712ab70-8c8f-4fe1-a2fc-b57803bd5eaa" doc:name="Transform Message" >
