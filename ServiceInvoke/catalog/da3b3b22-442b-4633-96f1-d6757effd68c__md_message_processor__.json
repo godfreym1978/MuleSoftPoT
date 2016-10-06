@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Web_Service_Consumer",
+            "typeId": "ResolveIP"
+        }
+    },
+    "id": "da3b3b22-442b-4633-96f1-d6757effd68c",
+    "version": "5.2.0.0"
+}

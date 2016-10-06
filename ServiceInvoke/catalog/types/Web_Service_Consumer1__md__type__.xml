@@ -1,0 +1,576 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>ResolveIP</id>
+        <displayName>ResolveIP</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:ipAddress</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>string</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                    <localPart>ipAddress</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:licenseKey</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                    <localPart>licenseKey</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+          <localPart>ResolveIP</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;s:schema xmlns:s=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:http=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot; xmlns:mime=&quot;http://schemas.xmlsoap.org/wsdl/mime/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:soap12=&quot;http://schemas.xmlsoap.org/wsdl/soap12/&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:tm=&quot;http://microsoft.com/wsdl/mime/textMatching/&quot; xmlns:tns=&quot;http://ws.cdyne.com/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://ws.cdyne.com/&quot;&gt;&#xd;
+      &lt;s:element name=&quot;ResolveIP&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;ipAddress&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;licenseKey&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:element name=&quot;ResolveIPResponse&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;ResolveIPResult&quot; type=&quot;tns:IPInformation&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:complexType name=&quot;IPInformation&quot;&gt;&#xd;
+        &lt;s:sequence&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;City&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;StateProvince&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;Country&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;Organization&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Latitude&quot; type=&quot;s:double&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Longitude&quot; type=&quot;s:double&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;AreaCode&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;TimeZone&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;HasDaylightSavings&quot; type=&quot;s:boolean&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Certainty&quot; type=&quot;s:short&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;RegionName&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;CountryCode&quot; type=&quot;s:string&quot;/&gt;&#xd;
+        &lt;/s:sequence&gt;&#xd;
+      &lt;/s:complexType&gt;&#xd;
+      &lt;s:element name=&quot;IPInformation&quot; nillable=&quot;true&quot; type=&quot;tns:IPInformation&quot;/&gt;&#xd;
+    &lt;/s:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>file:/D:/Build/AnypointStudio/workspace/serviceinvoke/src/main/resources/ip2geo.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix>
+            <entry>
+              <string>http://ws.cdyne.com/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>ResolveIPResponse</id>
+        <displayName>ResolveIPResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:ResolveIPResult</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                      <localPart>IPInformation</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:City</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>City</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:StateProvince</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>StateProvince</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:Country</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>Country</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:Organization</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>Organization</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:Latitude</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>DOUBLE</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                            <localPart>double</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>Latitude</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:Longitude</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>DOUBLE</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[5]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>Longitude</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:AreaCode</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>AreaCode</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:TimeZone</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>TimeZone</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:HasDaylightSavings</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>BOOLEAN</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                            <localPart>boolean</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>HasDaylightSavings</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:Certainty</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                            <localPart>short</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>Certainty</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:RegionName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>RegionName</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:CountryCode</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                          <localPart>CountryCode</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                <localPart>ResolveIPResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                <schemas>
+                  <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;s:schema xmlns:s=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:http=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot; xmlns:mime=&quot;http://schemas.xmlsoap.org/wsdl/mime/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:soap12=&quot;http://schemas.xmlsoap.org/wsdl/soap12/&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:tm=&quot;http://microsoft.com/wsdl/mime/textMatching/&quot; xmlns:tns=&quot;http://ws.cdyne.com/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://ws.cdyne.com/&quot;&gt;&#xd;
+      &lt;s:element name=&quot;ResolveIP&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;ipAddress&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;licenseKey&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:element name=&quot;ResolveIPResponse&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;ResolveIPResult&quot; type=&quot;tns:IPInformation&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:complexType name=&quot;IPInformation&quot;&gt;&#xd;
+        &lt;s:sequence&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;City&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;StateProvince&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;Country&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;Organization&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Latitude&quot; type=&quot;s:double&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Longitude&quot; type=&quot;s:double&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;AreaCode&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;TimeZone&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;HasDaylightSavings&quot; type=&quot;s:boolean&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Certainty&quot; type=&quot;s:short&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;RegionName&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;CountryCode&quot; type=&quot;s:string&quot;/&gt;&#xd;
+        &lt;/s:sequence&gt;&#xd;
+      &lt;/s:complexType&gt;&#xd;
+      &lt;s:element name=&quot;IPInformation&quot; nillable=&quot;true&quot; type=&quot;tns:IPInformation&quot;/&gt;&#xd;
+    &lt;/s:schema&gt;</string>
+                </schemas>
+                <encoding reference="../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                <baseUri>file:/D:/Build/AnypointStudio/workspace/serviceinvoke/src/main/resources/ip2geo.wsdl</baseUri>
+              </schemas>
+              <namespaceManager>
+                <namespacePrefix>
+                  <entry>
+                    <string>http://ws.cdyne.com/</string>
+                    <string>ns0</string>
+                  </entry>
+                </namespacePrefix>
+              </namespaceManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+                    <localPart>ResolveIPResult</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://ws.cdyne.com/</namespaceURI>
+          <localPart>ResolveIPResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/D:/Build/AnypointStudio/workspace/serviceinvoke/src/main/resources/ip2geo.wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer1</connectorName>
+</metadata__catalog__entry>

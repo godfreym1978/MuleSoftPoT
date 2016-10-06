@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Employees>
+	<Employee>
+		<DepartmentID></DepartmentID>
+		<JobID></JobID>
+		<CommisionPCT></CommisionPCT>
+		<EMail></EMail>
+		<LastName></LastName>
+		<ManagerID></ManagerID>
+		<PhoneNumber></PhoneNumber>
+		<HireDate></HireDate>
+		<FirstName></FirstName>
+		<EmployeeID></EmployeeID>
+		<Salary></Salary></Employee></Employees>

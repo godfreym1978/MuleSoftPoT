@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd">
+    <db:oracle-config name="Oracle_Configuration" host="localhost" port="1521" instance="XE" user="system" password="passw0rd" doc:name="Oracle Configuration"/>
+    <flow name="restinvokeFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/RESTInvoke" doc:name="HTTP"/>
+        <db:select config-ref="Oracle_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT * FROM system.employees WHERE last_name = #[message.inboundProperties.'http.query.params'.lastname]]]></db:parameterized-query>
+    </db:select>
+        <dw:transform-message metadata:id="ad2381af-7198-47e5-b6b6-45372d7d12fd" doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+---
+{
+	Employees: {
+		(payload map ((employee , indexOfEmployee) -> {
+			Employee: {
+				DepartmentID: employee.DEPARTMENT_ID as :string,
+				JobID: employee.JOB_ID,
+				CommisionPCT: employee.COMMISSION_PCT as :string when payload[0].COMMISSION_PCT !=null otherwise "",
+				EMail: employee.EMAIL,
+				LastName: employee.LAST_NAME,
+				ManagerID: employee.MANAGER_ID as :string,
+				PhoneNumber: employee.PHONE_NUMBER,
+				HireDate: employee.HIRE_DATE as :string,
+				FirstName: employee.FIRST_NAME,
+				EmployeeID: employee.EMPLOYEE_ID as :string,
+				Salary: employee.SALARY as :string
+			}
+			
+		}))	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+</flow>
+</mule>

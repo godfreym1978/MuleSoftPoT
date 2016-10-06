@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml"
+	xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <ws:consumer-config name="SOAP_Web_Service_Consumer1" service="IP2Geo" port="IP2GeoSoap12" serviceAddress="http://ws.cdyne.com/ip2geo/ip2geo.asmx" wsdlLocation="ip2geo.wsdl" doc:name="Web Service Consumer"/>
+    
+    	<mulexml:namespace-manager
+		includeConfigNamespaces="true">
+		<mulexml:namespace prefix="ns0"
+			uri="http://ws.cdyne.com/" />
+	</mulexml:namespace-manager>
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8083" doc:name="HTTP Listener Configuration"/>
+	
+    
+    <flow name="SOAPgeoipFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/GeoIPSOAP" doc:name="HTTP"/>
+
+
+
+        <cxf:proxy-service  payload="body" doc:name="CXF" enableMuleSoapHeaders="false" namespace="http://ws.cdyne.com/" port="IP2GeoSoap12" service="IP2Geo" soapVersion="1.2" wsdlLocation="src/main/resources/ip2geo.wsdl"/>
+        <ws:consumer config-ref="SOAP_Web_Service_Consumer1" operation="ResolveIP" doc:name="Web Service Consumer"/>
+    </flow>
+</mule>

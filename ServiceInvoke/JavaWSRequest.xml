@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tra="http://training/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tra:sendMoney>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <amount>1000</amount>
+            <!--Optional:-->
+            <authCode>?</authCode>
+            <!--Optional:-->
+            <destCurreny>?</destCurreny>
+            <!--Optional:-->
+            <destination>?</destination>
+            <!--Optional:-->
+            <origin>?</origin>
+            <!--Optional:-->
+            <originCurreny>?</originCurreny>
+            <!--Optional:-->
+            <partnerCode>?</partnerCode>
+            <!--Optional:-->
+            <receiver>?</receiver>
+            <!--Optional:-->
+            <receiverAccount>?</receiverAccount>
+            <!--Optional:-->
+            <sender>?</sender>
+            <!--Optional:-->
+            <senderAccount>?</senderAccount>
+         </arg0>
+      </tra:sendMoney>
+   </soapenv:Body>
+</soapenv:Envelope>
