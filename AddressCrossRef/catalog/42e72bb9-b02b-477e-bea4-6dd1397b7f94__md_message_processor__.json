@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "DBT1Input"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "AddrCrossRefOut"
+        }
+    },
+    "id": "42e72bb9-b02b-477e-bea4-6dd1397b7f94",
+    "version": "5.2.0.0"
+}

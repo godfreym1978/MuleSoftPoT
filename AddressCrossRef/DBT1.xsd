@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="Cities" type="CitiesType"/>
+  <xs:complexType name="CityType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="CITY_NAME"/>
+      <xs:element type="xs:string" name="ZIP_CD"/>
+      <xs:element type="xs:string" name="STATE_CD"/>
+      <xs:element type="xs:string" name="CNTY_NAME"/>
+      <xs:element type="xs:string" name="PREFERED_CITY_NAME"/>
+      <xs:element type="xs:string" name="CNTY_CD"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CitiesType">
+    <xs:sequence>
+      <xs:element type="CityType" name="City" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

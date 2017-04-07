@@ -1,0 +1,110 @@
+[
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "ANCHORAGE                   ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "BLUE RDG MNR                ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "BLUE RIDGE MANOR            ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "LOUISVILLE                  ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "MEADOWBRK FRM               ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "MEADOWBROOK FARM            ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "MOORLAND                    ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "SYCAMORE                    ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  },
+  {
+    "ZIP_CD": "40223",
+    "CNTY_NAME": "JEFFERSON                ",
+    "CNTY_CD": "111",
+    "PREFERED_CITY_NAME": "LOUISVILLE                  ",
+    "STATE_CD": "KY",
+    "CITY_NAME": "WILDWOOD                    ",
+    "Code": {
+      "SSACode": "18550",
+      "FIPSCode": "21111"
+    }
+  }
+]
