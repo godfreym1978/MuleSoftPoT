@@ -2,6 +2,7 @@
 /RESTInvokeDB.xml
 /SOAPgeoip.xml
 /XMLgeoip.xml
+/app-DEV.properties
 /ip2geo.wsdl
 /log4j2.xml
 /mule-app.properties

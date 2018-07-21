@@ -1,0 +1,47 @@
+#%RAML 1.0
+title: placeholder
+version: 1.0
+baseUri: http://jsonplaceholder.typicode.com
+
+/bankTrans:
+  get:
+    description: Retrieve a list of all the transactions
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+                           [{
+                              "HBD_DEPOSIT": "0",
+                              "HBD_DATE": "1275537600000",
+                              "HBD_WITH": "30000",
+                              "HBD_BAL": "12518.15",
+                              "HBD_DESC": "Chq Paid-MICR INW CL-LAVINA G MEVEZEJ PP",
+                              "HBD_NUM": "942688"
+                            },{
+                              "HBD_DEPOSIT": "0",
+                              "HBD_DATE": "1275537600000",
+                              "HBD_WITH": "30000",
+                              "HBD_BAL": "12518.15",
+                              "HBD_DESC": "Chq Paid-MICR INW CL-LAVINA G MEVEZEJ PP",
+                              "HBD_NUM": "942688"
+                            }]
+            
+
+  /{ID}:
+      get:
+        description: Get information about a particular transaction
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                 {
+                                "HBD_DEPOSIT": "0",
+                                "HBD_DATE": "1275537600000",
+                                "HBD_WITH": "30000",
+                                "HBD_BAL": "12518.15",
+                                "HBD_DESC": "Chq Paid-MICR INW CL-LAVINA G MEVEZEJ PP",
+                                "HBD_NUM": "942688"
+                              }
+            

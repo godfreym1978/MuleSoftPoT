@@ -18,7 +18,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 		<mulexml:namespace prefix="ns0"
 			uri="http://ws.cdyne.com/" />
 	</mulexml:namespace-manager>
-    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8083" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
 	
     
     <flow name="SOAPgeoipFlow">
